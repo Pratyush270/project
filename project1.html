@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- inline tag is different fom inline block because in inline block you can set height and width of the elements and in inline block padding is there and it is different from block because it does not add a line break means other elements also can be in the sam line |dekho jab aap position ko absolute set karte ho tab wo element ka left,right,top, properties sab uske parent class ya parent element ke hisab se set hot hai jaise right ka parent jo hai wo header hai toh wo uske hisab se hoga| margin auto daalne se browser automatically margin set krta hai,length mtlab margin aapko px,ptaur cm ke terms mai daal na hai,% mtlab width ke percentage ke hisab se margin set hoga|inherit - specifies that the margin should be inherited from the parent element| paddin mai aapka pehla value jo hai that stands for vertical padding and the  second value stands for horizontal padding| cursor pointer daalne se hota yeh hai ki jo  aapka cursor hai waha jaane pe apne aap hath mai convert ho jata hai|form tag ke andar jab aap input type daalte ho aur usme placeholder ka koi value set krte ho to wo halka uske andar display hota hai jaise enter your name daale to wahi display hoga halaki jab usko clicke krenge tab wo hat jaega-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM FORM</title>
+    <style>
+     body{
+        font-family: 'Tilt Warp' , cursive;
+        background-image: url("image/gym.jpg");
+        background-size: 1500px 750px;
+        color: white;
+     }
+     .left{
+         display: inline-block;
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         left: 34px;
+        top: 12px;
+        line-height: 19px;
+        }
+    .left img{
+        height: 136px;
+        width: 136px;
+    }
+     .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 12px;
+     }
+     .center{
+        color: white;
+        display: block;
+        width: 40%;
+        margin: 12px auto;
+     }
+      .navbar li{
+        display: inline-block;
+      }
+     .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 0px 10px;
+       }      
+      .navbar li a:hover ,.active li a{
+        text-decoration: underline;
+        color: brown;
+       }
+       .btn{
+        font-family:'Tilt Warp' , cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 3px 11px;
+        font-size: 15px;
+        cursor: pointer;
+       }
+       .btn:hover{
+        text-decoration: dotted;
+        color: chartreuse;
+       }
+       .container{
+        position: absolute;
+         top: 30%;
+         border: 2px solid white;
+       margin: 2px 2px;
+       padding: 75px;
+       display: block;
+      width: 30%;
+       border-radius: 20px;
+       }
+       .form input{
+        text-align: center;
+        font-family: 'Tilt Warp' , cursive;
+        display: block;
+        width: 500px;
+        padding: 60px,10px;
+        margin: 11px auto;
+       }
+       .container h1{
+        text-align: center;
+       }
+       .container button{
+         display: block;
+         width: 230px;
+         position: absolute;
+         left: 30%;
+       }
+    </style>
+    <link rel="stylesheet" href="cs.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Tilt+Warp">
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="image/gym logo(1).jpeg" alt="">
+        </div>
+        <div class="center">
+           <ul class="navbar" class="active">
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">FITNESS CALCULATOR</a></li>
+        </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+<div class="container">
+  <h1>Join the best gym now</h1>
+   <form action="">
+    <div class="form">
+        <input type="text" name="" placeholder="enter your name">
+    </div>
+    <div class="form">
+        <input type="text" name="" placeholder="enter your gender">
+    </div>
+    <div class="form">
+        <input type="text" name="" placeholder="enter your age">
+    </div>
+    </form>
+    <button class="btn"> SUBMIT </button>
+</div>
+</body>
+</html>
